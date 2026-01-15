@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.font-work-sans{
+  font-family: "Work Sans";
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.display-flex{
+    display: flex;
+}
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.heading-contents{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+header img{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.navigation-bar{
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 1452px;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    gap: 70px;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: #424242;
+}
+ul li a:hover{
+    color: #FF900E;
+}
+nav h3{
+    font-size: 2.8125rem;
+    font-weight: bold;
+    color: #131313;
+}
+.contents{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 102px;
+}
+.contents h1{
+    font-size: 4rem;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+.contents p{
+    max-width: 868px;
+    padding-bottom: 33px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    font-weight: 400;
+}
+.contents button{
+    width: 180px;
+    padding: 21px 25px;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.contents button:hover{
+    background-color: #ffffff;
+    color: #FF900E;
+    border: 1px solid #FF900E;
+}
+.all-contents img{
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    vertical-align: middle;
+}
+.Team{
+    display: flex;
+    align-items: center;
+    max-width: 1318px;
+    margin: 50px auto;
+}
+.text-content{
+    margin-left: 73px;
+    max-width: 537px;
+}
+.text{
+    padding-left: 73px;
+    max-width: 537px;
+}
+.Team h1{
+    padding-bottom: 24px;
+}
+.Team p{
+    padding-bottom: 32px;
+    font-size: 1rem;
+    line-height: 26px;
+    color: #727272;
+}
+.Team .text-content button{
+    width: 180px;
+    padding: 21px 25px;
+    background-color: #FF900E;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.Team button:hover{
+    background-color: #ffffff;
+    color: #FF900E;
+    border: 1px solid #FF900E;
+}
+.Team .image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+#first-text{
+    font-weight: 400;
+    font-size: 2.8125rem;
+    color: #727272;
+}
+#second-text{
+    font-weight: 800;
+    font-size: 2.8125rem;
+    color: #131313;
+}
+#third-text{
+    font-weight: 800;
+    font-size: 2.8125rem;
+    font-weight: 700;
+    color: #FF900E;
+}
+.Features{
+    max-width: 1440px;
+    margin: 130px auto;
+    display: flex;
+    gap: 146px;
+    /* border: 1px solid red; */
+}
+.Features img{
+    width: 100%;
+}
+.features-content{
+    max-width: 586px;
+}
+.features-content h1{
+    border-left: 5px solid #FF900E ;
+    padding-left: 21px;
+    font-size: 2.8125rem;
+    font-weight: 800;
+    color: #131313;
+}
+.features-content .content-paragraph{
+    line-height: 26px;
+    padding-top: 24px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #727272;
+}
+.cards{
+    max-width: 586px;
+    padding-top: 30px;
+}
+.card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+.card h3{
+    padding-bottom: 10px;
+    font-size: 1.25rem;
+    color: #131313;
+}
+.card p{
+    font-size: 1rem;
+    color: #727272;
+}
+.display-hide{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .navigation-bar{
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 30px;
+}
+.contents{
+    padding-top: 60px ;
+}
+.contents h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+ul{
+    gap: 24px;
+}
+.contents button{
+    width: 150px;
+    /* padding: 21px 25px; */
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.Team{
+    flex-direction: column;
+}
+.Team .image{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+}
+.Team .image img{
+    width: 100%;
+}
+.text-content{
+    margin: 0px;
+    text-align: center;
+    padding: 20px;
+}
+
+}
